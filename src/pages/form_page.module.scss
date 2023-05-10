@@ -1,9 +1,50 @@
+.container {
+    background: url("../imgs/v1.jpg");
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px;
+}
+
+.box_for_selectors {
+    display: flex;
+    gap: 20px;
+}
+
+.date_container {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
 .form_container {
     max-width: 800px;
-    margin: 180px auto 0px auto;
+    margin: 0 auto 0px auto;
     padding: 40px;
     border-radius: 15px !important;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media (max-width: 770px) {
+    .container {
+        padding: 40px;
+        padding-top: 80px;
+    }
+
+    .date_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .box_for_selectors {
+        flex-direction: column;
+    }
 }
